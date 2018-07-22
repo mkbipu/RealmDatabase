@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#255465"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student information"
+        android:textColor="#ff1744"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:id="@+id/header"
+        android:layout_marginTop="24dp"/>
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_txt"
+        android:layout_below="@id/header"
+        android:layout_marginTop="24dp"
+        android:hint="Enter student name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/age_txt"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/name_txt"
+        android:hint="Enter student age"/>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/age_txt"
+        android:text="save your imformation"
+        android:layout_marginTop="24dp"
+        android:id="@+id/save_btn"/>
+    
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/save_btn">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/display_imformation"
+            android:layout_marginTop="24dp"/>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
